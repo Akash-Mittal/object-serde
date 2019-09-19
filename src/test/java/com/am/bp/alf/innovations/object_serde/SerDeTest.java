@@ -10,7 +10,7 @@ import com.google.gson.GsonBuilder;
 import junit.framework.Assert;
 import uk.co.jemos.podam.api.PodamFactoryImpl;
 
-public class AppTest {
+public class SerDeTest {
     Gson gson;
     PodamFactoryImpl podamFactoryImpl;
 
@@ -22,7 +22,7 @@ public class AppTest {
     }
 
     @Test
-    public void testSerialization() {
+    public void testGivenObjectCheckIfGetConvertedToJsonAndThenDesrializeBackToObject() {
         LogMessage logMessage = podamFactoryImpl.manufacturePojo(LogMessage.class);
         String serJson = gson.toJson(logMessage);
         Assert.assertNotNull(serJson);
