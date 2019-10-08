@@ -1,20 +1,18 @@
 package com.am.bp.alf.innovations.serde;
 
-import java.util.Map;
-
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class LogMessage extends Message<Log> {
 
-    LogMessage(Map<String, String> headers, Log body) {
-        super(headers, body);
-    }
-
-    private static final long serialVersionUID = 2804120722928102031L;
+	private static final long serialVersionUID = 2804120722928102031L;
 
 }
