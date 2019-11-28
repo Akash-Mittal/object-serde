@@ -35,3 +35,7 @@
 		    "description": "J8_C_NXZci"
 		  }
 		}
+
+### Take Aways
+* How to Pretty Print a JSON file.
+* How to Dynamically Test JSON - without loading it from file system
