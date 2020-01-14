@@ -2,13 +2,6 @@ package com.am.bp.alf.innovations.serde;
 
 import java.util.Map;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-@Getter
-@Setter
-@ToString
 public class LogMessage extends Message<Log> {
 
     LogMessage(Map<String, String> headers, Log body) {

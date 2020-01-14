@@ -3,15 +3,10 @@ package com.am.bp.alf.innovations.serde;
 import java.time.LocalDate;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @Builder
-@ToString
-
 public class Log {
 
     private EventType type;
